@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenArt &mdash; NFT platform for Artisan</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Must have elements like header, nav, footer, main, section, aside -->
+    <header class="shadow-md">
+        <nav class="container d-flex justify-between align-center">
+            <h1 class="nav__brand">OpenArt</h1>
+            <div class="nav__toggler">
+                <span class="nav__toggler-icon"></span>
+            </div>
+            <section class="nav__collapse align-center" id="collapseMenu">
+                <section class="nav__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <form>
+                        <input id="search" type="search" autofocus=""
+                            placeholder="Search for items, collections, and accounts">
+                    </form>
+                </section>
+                <ul class="text-center align-center">
+                    <li class="nav__list-item active"><a href="#" class="btn">Home</a></li>
+                    <li class="nav__list-item"><a href="#explore" class="btn">Explore</a></li>
+                    <li class="nav__list-item"><a href="#resources" class="btn">Resources</a></li>
+                    <li class="nav__list-item wallet">
+                        <a href="#" class="btn btn--primary d-flex align-center justify-center">
+                            <svg width="14" height="14" viewBox="0 0 18 18" fill="none" style="margin-right: 6px;"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 0C0.89 0 0 0.9 0 2V16C0 16.5304 0.210714 17.0391 0.585786 17.4142C0.960859 17.7893 1.46957 18 2 18H16C16.5304 18 17.0391 17.7893 17.4142 17.4142C17.7893 17.0391 18 16.5304 18 16V13.72C18.59 13.37 19 12.74 19 12V6C19 5.26 18.59 4.63 18 4.28V2C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0H2ZM2 2H16V4H10C9.46957 4 8.96086 4.21071 8.58579 4.58579C8.21071 4.96086 8 5.46957 8 6V12C8 12.5304 8.21071 13.0391 8.58579 13.4142C8.96086 13.7893 9.46957 14 10 14H16V16H2V2ZM10 6H17V12H10V6ZM13 7.5C12.6022 7.5 12.2206 7.65804 11.9393 7.93934C11.658 8.22064 11.5 8.60218 11.5 9C11.5 9.39782 11.658 9.77936 11.9393 10.0607C12.2206 10.342 12.6022 10.5 13 10.5C13.3978 10.5 13.7794 10.342 14.0607 10.0607C14.342 9.77936 14.5 9.39782 14.5 9C14.5 8.60218 14.342 8.22064 14.0607 7.93934C13.7794 7.65804 13.3978 7.5 13 7.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Wallet
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="container d-flex flex-col-md">
+            <section class="main__content py-1 d-flex flex-col justify-center">
+                <h1>Discover, collect, and sell your pure art NFTs</h1>
+                <p class="py-1">The world first NFT platform for Pure Art</p>
+                <div class="pt-1">
+                    <a href="#explore" class="btn btn--primary">
+                        <svg width="16" height="16" viewBox="0 0 28 28" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.5067 27.5866L13.3333 22.48C15.4267 21.7066 17.3867 20.6666 19.2 19.4533L15.5067 27.5866ZM5.52 14.6666L0.41333 12.4933L8.54666 8.79996C7.33333 10.6133 6.29333 12.5733 5.52 14.6666ZM23.6267 3.33329C24 3.33329 24.3333 3.33329 24.6133 3.39996C24.84 5.25329 24.5867 9.06663 20.2133 13.44C17.9467 15.72 15.24 17.4666 12.2 18.6266L9.33333 15.8266C10.56 12.7466 12.3067 10.04 14.56 7.78663C18.24 4.10663 21.52 3.33329 23.6267 3.33329ZM23.6267 0.666626C20.9867 0.666626 16.9867 1.58663 12.6667 5.90663C9.74666 8.82663 8 12.04 6.86666 14.8533C6.49333 15.8533 6.74666 16.9466 7.48 17.6933L10.32 20.52C10.8267 21.0266 11.5067 21.3333 12.2133 21.3333C12.52 21.3333 12.84 21.2533 13.1467 21.1333C16 20.04 19.1733 18.2533 22.0933 15.3333C29.64 7.78663 26.8133 1.18663 26.8133 1.18663C26.8133 1.18663 25.6 0.666626 23.6267 0.666626ZM17.3867 10.6133C16.3467 9.57329 16.3467 7.87996 17.3867 6.83996C18.4267 5.79996 20.12 5.79996 21.16 6.83996C22.1867 7.87996 22.2 9.57329 21.16 10.6133C20.12 11.6533 18.4267 11.6533 17.3867 10.6133ZM9.84 20.04L7.96 18.16L9.84 20.04ZM6.32 27.3333L11.1733 22.48C10.72 22.36 10.28 22.16 9.88 21.88L4.44 27.3333H6.32ZM0.666663 27.3333H2.54666L8.90666 20.9866L7.01333 19.1066L0.666663 25.4533V27.3333ZM0.666663 23.56L6.12 18.12C5.84 17.72 5.64 17.2933 5.52 16.8266L0.666663 21.68V23.56Z"
+                                fill="currentColor" />
+                        </svg>
+                        Explore</a>
+                </div>
+            </section>
+            <div class="d-flex align-center py-1">
+                <img src="assets/img/hero-image.svg" alt="Pattern Art">
+            </div>
+        </section>
+        <section id="createAndSell" class="container pt-2">
+            <h2 class="text-center pb-2">Create and sell your NFTs</h2>
+            <div class="d-flex flex-col-md justify-between section__step">
+                <article class="card text-center">
+                    <img class="img-center" src="assets/img/step-1.svg" alt="Setup wallet">
+                    <h3>Set up your wallet</h3>
+                    <p>Once you’ve set up your wallet of choice, connect it to OpenSeaby clicking the NFT Marketplacein
+                        the
+                        top
+                        right corner.</p>
+                </article>
+                <article class="card text-center">
+                    <img class="img-center" src="assets/img/step-2.svg" alt="Create collection">
+                    <h3>Create your collection</h3>
+                    <p>Click Create and set up your collection. Add social links, a description, profile & banner
+                        images,
+                        and
+                        set a secondary sales fee.</p>
+                </article>
+                <article class="card text-center">
+                    <img class="img-center" src="assets/img/step-3.svg" alt="Add NFT">
+                    <h3>Add your NFTs</h3>
+                    <p>Upload your work (image, video, audio, or 3D art), add a title and description, and customize
+                        your
+                        NFTs
+                        with properties, stats</p>
+                </article>
+                <article class="card text-center">
+                    <img class="img-center" src="assets/img/step-4.svg" alt="Sale them">
+                    <h3>List them for sale</h3>
+                    <p>Choose between auctions, fixed-price listings, and declining-price listings. You choose how you
+                        want
+                        to
+                        sell your NFTs!</p>
+                </article>
+            </div>
+        </section>
+        <section id="explore" class="container">
+            <h2 class="text-center pb-2">Today's Pick</h2>
+            <section class="section__explore d-flex flex-col-md">
+                <article class="card">
+                    <img class="nft__image" src="assets/img/pick-1.svg" alt="Pattern NFT">
+                    <div class="pt-1 d-flex align-center">
+                        <img class="nft__owner" src="assets/img/avatar.png" alt="Seller's Profile Image">
+                        <section class="pl-1">
+                            <h4>Patternity</h4>
+                            <p>Owned by <strong>Trysna</strong></p>
+                        </section>
+                    </div>
+                </article>
+                <article class="card mx-1-md">
+                    <img src="assets/img/pick-2.svg" alt="Pattern NFT">
+                    <div class="pt-1 d-flex align-center">
+                        <img src="assets/img/avatar.png" alt="Seller's Profile Image">
+                        <section class="pl-1">
+                            <h4>Patternity</h4>
+                            <p>Owned by <strong>Trysna</strong></p>
+                        </section>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="assets/img/pick-3.svg" alt="Pattern NFT">
+                    <div class="pt-1 d-flex align-center">
+                        <img src="assets/img/avatar.png" alt="Seller's Profile Image">
+                        <section class="pl-1">
+                            <h4>Patternity</h4>
+                            <p>Owned by <strong>Trysna</strong></p>
+                        </section>
+                    </div>
+                </article>
+            </section>
+            <div class="d-flex justify-center">
+                <a href="" class="btn btn--primary">
+                    <svg width="16" height="16" viewBox="0 0 28 28" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.5067 27.5866L13.3333 22.48C15.4267 21.7066 17.3867 20.6666 19.2 19.4533L15.5067 27.5866ZM5.52 14.6666L0.41333 12.4933L8.54666 8.79996C7.33333 10.6133 6.29333 12.5733 5.52 14.6666ZM23.6267 3.33329C24 3.33329 24.3333 3.33329 24.6133 3.39996C24.84 5.25329 24.5867 9.06663 20.2133 13.44C17.9467 15.72 15.24 17.4666 12.2 18.6266L9.33333 15.8266C10.56 12.7466 12.3067 10.04 14.56 7.78663C18.24 4.10663 21.52 3.33329 23.6267 3.33329ZM23.6267 0.666626C20.9867 0.666626 16.9867 1.58663 12.6667 5.90663C9.74666 8.82663 8 12.04 6.86666 14.8533C6.49333 15.8533 6.74666 16.9466 7.48 17.6933L10.32 20.52C10.8267 21.0266 11.5067 21.3333 12.2133 21.3333C12.52 21.3333 12.84 21.2533 13.1467 21.1333C16 20.04 19.1733 18.2533 22.0933 15.3333C29.64 7.78663 26.8133 1.18663 26.8133 1.18663C26.8133 1.18663 25.6 0.666626 23.6267 0.666626ZM17.3867 10.6133C16.3467 9.57329 16.3467 7.87996 17.3867 6.83996C18.4267 5.79996 20.12 5.79996 21.16 6.83996C22.1867 7.87996 22.2 9.57329 21.16 10.6133C20.12 11.6533 18.4267 11.6533 17.3867 10.6133ZM9.84 20.04L7.96 18.16L9.84 20.04ZM6.32 27.3333L11.1733 22.48C10.72 22.36 10.28 22.16 9.88 21.88L4.44 27.3333H6.32ZM0.666663 27.3333H2.54666L8.90666 20.9866L7.01333 19.1066L0.666663 25.4533V27.3333ZM0.666663 23.56L6.12 18.12C5.84 17.72 5.64 17.2933 5.52 16.8266L0.666663 21.68V23.56Z"
+                            fill="currentColor" />
+                    </svg>
+                    <span> Explore More</span>
+                </a>
+            </div>
+        </section>
+        <section id="resources" class="container py-1">
+            <h2 class="text-center pb-2">Articles for getting started</h2>
+            <section class="section__resources d-flex flex-col-md">
+                <article class="card">
+                    <img src="assets/img/article-1.png" alt="Article 1">
+                    <h3 class="py-1"><a href="">Keeping yourself safe when buying NFTs on OpenSea</a></h3>
+                </article>
+                <article class="card mx-1-md">
+                    <img src="assets/img/article-2.png" alt="Article 2">
+                    <h3 class="py-1"><a href="">The beginner's guide to creating and selling digital art NFTs</a></h3>
+                </article>
+                <article class="card">
+                    <img src="assets/img/article-3.png" alt="Article 3">
+                    <h3 class="py-1"><a href="">10 tips for avoiding scams and staying safe on the decentralized web</a>
+                    </h3>
+                </article>
+            </section>
+            <div class="d-flex justify-center">
+                <a href="" class="btn btn--primary">
+                    <svg width="16" height="16" viewBox="0 0 28 28" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.5067 27.5866L13.3333 22.48C15.4267 21.7066 17.3867 20.6666 19.2 19.4533L15.5067 27.5866ZM5.52 14.6666L0.41333 12.4933L8.54666 8.79996C7.33333 10.6133 6.29333 12.5733 5.52 14.6666ZM23.6267 3.33329C24 3.33329 24.3333 3.33329 24.6133 3.39996C24.84 5.25329 24.5867 9.06663 20.2133 13.44C17.9467 15.72 15.24 17.4666 12.2 18.6266L9.33333 15.8266C10.56 12.7466 12.3067 10.04 14.56 7.78663C18.24 4.10663 21.52 3.33329 23.6267 3.33329ZM23.6267 0.666626C20.9867 0.666626 16.9867 1.58663 12.6667 5.90663C9.74666 8.82663 8 12.04 6.86666 14.8533C6.49333 15.8533 6.74666 16.9466 7.48 17.6933L10.32 20.52C10.8267 21.0266 11.5067 21.3333 12.2133 21.3333C12.52 21.3333 12.84 21.2533 13.1467 21.1333C16 20.04 19.1733 18.2533 22.0933 15.3333C29.64 7.78663 26.8133 1.18663 26.8133 1.18663C26.8133 1.18663 25.6 0.666626 23.6267 0.666626ZM17.3867 10.6133C16.3467 9.57329 16.3467 7.87996 17.3867 6.83996C18.4267 5.79996 20.12 5.79996 21.16 6.83996C22.1867 7.87996 22.2 9.57329 21.16 10.6133C20.12 11.6533 18.4267 11.6533 17.3867 10.6133ZM9.84 20.04L7.96 18.16L9.84 20.04ZM6.32 27.3333L11.1733 22.48C10.72 22.36 10.28 22.16 9.88 21.88L4.44 27.3333H6.32ZM0.666663 27.3333H2.54666L8.90666 20.9866L7.01333 19.1066L0.666663 25.4533V27.3333ZM0.666663 23.56L6.12 18.12C5.84 17.72 5.64 17.2933 5.52 16.8266L0.666663 21.68V23.56Z"
+                            fill="currentColor" />
+                    </svg>
+                    <span> Read More</span>
+                </a>
+            </div>
+        </section>
+        <section class="section_partners mt-2" id="partners">
+            <h2 class="text-center pt-2">Trusted with</h2>
+            <section class="container d-flex flex-col-md justify-evenly align-center">
+                <figure class="partner-logo">
+                    <img src="assets/img/coinbase.svg" alt="Coinbase" style="width: 252px; height:35px">
+                </figure>
+                <figure class="partner-logo">
+                    <img src="assets/img/blockchain-capital.svg" alt="Blockchain Capital"
+                        style="width: 252px; height:60px">
+                </figure>
+                <figure class="partner-logo">
+                    <img src="assets/img/trust-wallet.svg" alt="Trust Wallet" style="width: 252px; height:60px">
+                </figure>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="container footer__bio d-flex flex-col-md">
+            <aside class="d-flex flex-col justify-center align-center text-center">
+                <img src="assets/img/my-profile.jpg" alt="My Profile Picture">
+                <h3> Tryo Asnafi </h3>
+                <p>An experienced programmer in building web apps. Open source enthusiast who enjoys contributing to the
+                    community.</p>
+            </aside>
+            <section class="footer__company pt-2">
+                <h2>OpenArt</h2>
+                <p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens
+                    (NFTs). Buy, sell, and discover exclusive digital items.</p>
+                <address>
+                    <a href="mailto:tryoasnafi@gmail.com">jim@rock.com</a><br>
+                    <a href="tel:+628123456789">+62 8123456789</a>
+                </address>
+            </section>
+            <section class="footer__links pt-2">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Online Chat</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </section>
+        </section>
+        <p class="copyright text-center pt-2">&copy OpenArt
+            <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
+        </p>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
